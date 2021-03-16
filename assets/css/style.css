@@ -1,0 +1,145 @@
+/* presets */
+*{
+  box-sizing: border-box;
+  margin:0;
+  font-family: Georgia, 'Times New Roman', Times, serif;  
+  color:#555;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size:40px;
+}
+
+.container{
+    max-width:800px;
+    margin:0 auto;
+}
+
+.container:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.col{
+    float:left;
+    width:33.333333%;
+    border:1px solid #000;
+    border-radius:20px;
+    padding:20px;
+}
+
+.accent1{
+    background:#000;
+}
+
+.accent1 h3, .accent1 p{
+    color:#fff;
+}
+
+.accent2{
+    background:#ccc;
+}
+
+.accent3{
+    background:#eee;
+}
+
+
+/* nav */
+header{
+    border-bottom:1px solid #000;
+    position:relative;
+}
+
+#logo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size:30px;
+}
+
+nav{
+    position:absolute;
+    right: 5px;
+    top:3px;
+}
+
+nav ul{
+    list-style: none;
+    padding:0;
+}
+
+nav li{
+    display:inline-block;
+    vertical-align: top;
+}
+
+nav li li{
+    display:none;
+}
+
+nav a{
+    display:block;
+    padding:5px;
+    width:100px;
+    border:1px solid #555;
+    background:#fff;
+    text-align: center;
+}
+
+nav li:hover li{
+    display:block;
+}
+
+nav a:hover{
+    background:#555;
+    color:#fff;
+}
+
+/* hero */
+#hero{
+    background:url(../img/bg.jpg);
+    height:50vh;
+    background-size:cover;
+    padding-top:100px;
+
+}
+
+#herocontent{
+    background:rgba(255,255,255,.75);
+    max-width:500px;
+    padding:50px;
+    margin:0px auto;
+    border-radius:20px;
+}
+
+/* benny */
+#benny{
+    padding:40px 0px;
+    text-align: center;
+}
+
+#benny h2{
+    margin-bottom:20px;
+}
+
+/* cta */
+
+#cta{
+    background:#555;
+    padding:40px 0px;
+}
+
+#ctacontent{
+    max-width: 500px;
+    margin:0 auto;
+}
+
+#cta h2, #cta p{
+    color:#fff;
+}
